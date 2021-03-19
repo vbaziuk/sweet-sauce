@@ -2,7 +2,7 @@ from cryptography.fernet import Fernet
 
 def generate_key():
     """
-    generates a key for symmetric encryption and saves it to a file
+    generates a key for symmetric encryption and saves it to a file 'secret.key'
     """
     key = Fernet.generate_key()
     with open("secret.key", "wb") as key_file:
